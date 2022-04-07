@@ -26,6 +26,10 @@
         "url"=>$url
       )));
     }
+
+    public function deleteWebhook(){
+      return json_decode(fetch($this->_getApiMethodUrl("deleteWebhook"), 'POST'));
+    }
   }
 
 ?>

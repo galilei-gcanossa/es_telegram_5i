@@ -8,7 +8,9 @@
     
     var_dump($bot->getMe());
 
-    var_dump($bot->setWebhook("https://b6df-5-90-106-98.ngrok.io/json_handler.php"));
+    // var_dump($bot->setWebhook("https://b6df-5-90-106-98.ngrok.io/json_handler.php"));
+
+    $bot->deleteWebhook();
   }
   catch(ErrorException $e){
     echo $e->getMessage();
